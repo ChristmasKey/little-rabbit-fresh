@@ -6,11 +6,11 @@
                 <dl>
                     <dt>客户服务</dt>
                     <dd><i class="iconfont icon-kefu"></i> 在线客服</dd>
-                    <dd><i class="iconfont icon-question-circle"></i> 问题反馈</dd>
+                    <dd><i class="iconfont icon-question"></i> 问题反馈</dd>
                 </dl>
                 <dl>
                     <dt>关注我们</dt>
-                    <dd><i class="iconfont icon-wechat-fill"></i> 公众号</dd>
+                    <dd><i class="iconfont icon-weixin"></i> 公众号</dd>
                     <dd><i class="iconfont icon-weibo"></i> 微博</dd>
                 </dl>
                 <dl>
@@ -33,15 +33,15 @@
             <div class="container">
                 <div class="slogan">
                     <a href="javascript:">
-                        <i class="iconfont icon-dropbox-circle"></i>
+                        <i class="iconfont icon-footer01"></i>
                         <span>价格亲民</span>
                     </a>
                     <a href="javascript:">
-                        <i class="iconfont icon-wuliupeisong-"></i>
+                        <i class="iconfont icon-footer02"></i>
                         <span>物流快捷</span>
                     </a>
                     <a href="javascript:">
-                        <i class="iconfont icon-dianzan"></i>
+                        <i class="iconfont icon-footer03"></i>
                         <span>品质新鲜</span>
                     </a>
                 </div>

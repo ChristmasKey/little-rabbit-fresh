@@ -1,25 +1,26 @@
+<script setup>
+import {useCategoryStore} from "@/stores/category"
+
+const categoryStore = useCategoryStore()
+</script>
+
 <template>
     <header class="app-header">
         <div class="container">
             <h1 class="logo">
                 <router-link to="/">小兔鲜</router-link>
             </h1>
+            <!--渲染一级导航-->
             <ul class="app-header-nav">
                 <li class="home">
                     <router-link to="/">首页</router-link>
                 </li>
-                <li>
-                    <router-link to="/">居家</router-link>
-                </li>
-                <li>
-                    <router-link to="/">美食</router-link>
-                </li>
-                <li>
-                    <router-link to="/">服饰</router-link>
+                <li class="home" v-for="item in categoryStore.categoryList" :key="item.id">
+                    <router-link to="/">{{ item.name }}</router-link>
                 </li>
             </ul>
             <div class="search">
-                <i class="iconfont icon-sousuo"></i>
+                <i class="iconfont icon-search"></i>
                 <input type="text" placeholder="搜一搜">
             </div>
             <!--头部购物车-->
@@ -123,7 +124,7 @@
         color: #fff;
         font-size: 12px;
         border-radius: 10px;
-        font-family: Arial,serif;
+        font-family: Arial, serif;
       }
     }
   }
