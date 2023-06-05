@@ -12,12 +12,12 @@ const categoryStore = useCategoryStore()
         <div class="container">
             <RouterLink class="logo" to="/"/>
             <!-- 导航区域 -->
-            <ul class="app-header-nav ">
+            <ul class="app-header-nav">
                 <li class="home">
                     <RouterLink to="/">首页</RouterLink>
                 </li>
                 <li class="home" v-for="item in categoryStore.categoryList" :key="item.id">
-                    <router-link to="/">{{ item.name }}</router-link>
+                    <router-link active-class="active" :to="`/category/${item.id}`">{{ item.name }}</router-link>
                 </li>
             </ul>
 
